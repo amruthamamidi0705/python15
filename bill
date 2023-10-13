@@ -1,0 +1,33 @@
+#program for shopping mall bill
+shirt=500
+top=900
+pant=400
+kurthi=700
+print('**ABC Shopping mall**')
+name=input('Enter customer name:')
+phno= int(input('Enter Phno:'))
+shirts=int(input('Enter no of shirts selected'))
+pants=int(input('Enter no of pants selected'))
+tops=int(input('Enter no of tops selected'))
+kurthis=int(input('Enter no of kurthi selected'))
+bill=(shirt*shirts)+(pant*pants)+(top*tops)+(kurthi*kurthis)
+if bill>=8000:
+    disc=bill*30/100
+elif bill>=5000:
+    disc=bill*20/100
+elif bill>=3000:
+    disc=bill*10/100
+elif bill>=1000:
+    disc=bill*5/100
+else:
+    disc=bill*3/100
+tbill=bill-disc
+gst=tbill*12/100
+obill=tbill+gst
+print('customer name:',name)
+print('customer phno:',phno)
+print('bill:',bill)
+print('discount:',disc)
+print('gst 12%:',gst)
+print('Total bill:',obill)
+print('THANK U! VISIT AGAIN')
